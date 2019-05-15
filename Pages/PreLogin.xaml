@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.PreLogin"
+             BackgroundImage="@drawable/stworek2.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Chcesz się zarejestrować? Czy zalogować?"
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="100,30,100,0">
+                <Frame CornerRadius="20" BackgroundColor="#FF6600" Padding="0" Margin="0">
+                    <Button Text="Logowanie" Margin="0" TextColor="Black" BackgroundColor="#FF6600"  
+            FontAttributes="Bold" FontSize="Large" Clicked="Button_Clicked"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="100,30,100,0">
+                <Frame CornerRadius="20" BackgroundColor="#FF6600" Padding="0" Margin="0">
+                    <Button Text="Rejestracja" Margin="0" TextColor="Black" BackgroundColor="#FF6600"  
+            FontAttributes="Bold" FontSize="Large" Clicked="Button_Clicked_1"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.Plecak">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="iloscPrzedmiotow" HorizontalOptions="Center" />
+            <ListView  x:Name="bagList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#f2fffd" Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding nazwa}" TextColor="#ff0090" FontSize="Large" />
+                                    <Label Text="{Binding ilosc, StringFormat='Ilość: {0}'}"/>
+                                    <Label Text="{Binding id_przedmiotu}" IsVisible="False" x:Name="shop_clicked_id" />
+                                    <Button Text="Daj jedzonko" Clicked="Button_Clicked" AutomationId="{Binding id_przedmiotu}" />
+                                    <Button Text="Wyrzuć" Clicked="Button_Clicked_1" AutomationId="{Binding id_przedmiotu}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

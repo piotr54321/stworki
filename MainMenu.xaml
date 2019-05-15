@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:pages="clr-namespace:Projekt.Pages;assembly=Projekt"
+            x:Class="Projekt.MainMenu">
+
+    <!--Pages can be added as references or inline-->
+    <TabbedPage.Children BindingContext="x:Reference pagename">
+        <pages:Mapa Title="Mapka" Icon="map.png" />
+        <pages:Sklep Title="Sklep" Icon="shop.png" />
+        <pages:Postacs Title="Postać" Icon="face.png" />
+        <pages:Plecak Title="Plecak" Icon="bag.png" />
+        <pages:Ustawienia Title="Ustawienia" Icon="settings.png" />
+    </TabbedPage.Children>
+
+</TabbedPage>

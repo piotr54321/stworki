@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.About">
+    <ContentPage.Content>
+        <!--  <StackLayout
+         Orientation="Vertical"
+         VerticalOptions="Start"
+         HorizontalOptions="StartAndExpand">
+-->
+        <StackLayout>
+            
+            <Image Source="https://cdn.iconscout.com/icon/premium/png-256-thumb/mechanical-robot-1-584488.png" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Start"/>
+            <Label Text="Autor Aplikacji: Piotr Ziółko" />
+            <Label Text="Autor Aplikacji: Jarosław Tomasiak" />
+            <!-- <Label Text="Autor Aplikacji: Jarosław Tomasiak" />   -->
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+</ContentPage>
+    

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.LoginPage"
+             BackgroundImage="@drawable/stworek2.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="100,10,100,0">
+                <Frame CornerRadius="10" BackgroundColor="#FF6600" Padding="0" Margin="0">
+                    <Entry x:Name="UsernameEntry" Placeholder="Nazwa użytkownika"    FontAttributes="Bold" FontSize="Large" 
+                           PlaceholderColor="Black"   
+                           Keyboard="Email"  
+                           TextColor="#4286f4"/>
+                </Frame>
+                <BoxView HeightRequest="20"/>
+                <Frame CornerRadius="10" BackgroundColor="#FF6600" Padding="0" Margin="0">
+                    <Entry x:Name="PasswordEntry" Placeholder="Hasło"   
+                           PlaceholderColor="Black" HeightRequest="40" WidthRequest="60"  FontAttributes="Bold" FontSize="Large" 
+                    IsPassword="True"  
+                           TextColor="#4286f4"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="100,30,100,0">
+                <Frame CornerRadius="20" BackgroundColor="#FF6600" Padding="0" Margin="0">
+                    <Button Text="Login" Margin="0" TextColor="Black" BackgroundColor="#FF6600"  
+            FontAttributes="Bold" FontSize="Large" Clicked="OnLoginButtonClicked"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.AddCreaturePage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Wybierz swoją postać:"/>
+            <ListView  x:Name="CreatureslistView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#f2fffd" Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding image}" />
+                                    <Label Text="{Binding name}" TextColor="#ff0090" FontSize="Large" />
+                                    <Label Text="{Binding id}" IsVisible="False" x:Name="clicked_id" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

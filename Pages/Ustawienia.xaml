@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.Ustawienia">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ustawienia" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="5">
+                <Label x:Name="Twojanazwa"/>
+                <Label Text="Nazwa użytkownika" />
+                <Entry Placeholder="Nazwa użytkownika" x:Name="Nickname" />
+                <Button Text="Zatwierdź" x:Name="buttonNickname" Clicked="ButtonNickname_Clicked"/>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Autorzy" x:Name="buttonAutorzyPage" Clicked="ButtonAutorzyPage_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

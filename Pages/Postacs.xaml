@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Pages.Postacs">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid x:Name="statystyki">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Wybierz postać:" HorizontalOptions="End" Grid.Column="1" Grid.Row="0"/>
+                <ImageButton Source="settings.png" HeightRequest="30" HorizontalOptions="End" Clicked="ImageButton_Clicked" Grid.Column="1" Grid.Row="0"/>
+                <Image x:Name="imageTest" Source="{Binding image, StringFormat='@drawable/{0}'}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Aspect="AspectFit" />
+                <Label Text="Statystyki: " Grid.Column="0" Grid.Row="2"/>
+                <Label Text="{Binding health, StringFormat='żyćko: {0}'}" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="{Binding happy, StringFormat='frajda: {0}'}" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="{Binding hungry, StringFormat='apetycik: {0}'}" Grid.Row="4" Grid.Column="1"/>
+                <Button Text="Nakarm fajnym jedzonkiem" Grid.Row="6" Grid.RowSpan="2" Grid.Column="0" Clicked="Button_Clicked"/>
+                <Button Text="Gilgaj" Grid.Row="6" Grid.RowSpan="2" Grid.Column="1" Clicked="Button_Clicked_1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
